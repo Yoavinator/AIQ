@@ -1,0 +1,51 @@
+[debug] [2025-03-05T16:17:51.459Z] ----------------------------------------------------------------------
+[debug] [2025-03-05T16:17:51.462Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2025-03-05T16:17:51.462Z] CLI Version:   13.32.0
+[debug] [2025-03-05T16:17:51.462Z] Platform:      darwin
+[debug] [2025-03-05T16:17:51.462Z] Node Version:  v23.7.0
+[debug] [2025-03-05T16:17:51.462Z] Time:          Wed Mar 05 2025 11:17:51 GMT-0500 (Eastern Standard Time)
+[debug] [2025-03-05T16:17:51.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-05T16:17:51.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-05T16:17:51.542Z] > authorizing via signed-in user (myoav2@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/yoavmarziano/AIQ
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-05T16:17:51.544Z] Using project from CLI flag: amzn-interview-q
+[debug] [2025-03-05T16:17:51.545Z] Checked if tokens are valid: true, expires at: 1741194291309
+[debug] [2025-03-05T16:17:51.545Z] Checked if tokens are valid: true, expires at: 1741194291309
+[debug] [2025-03-05T16:17:51.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q [none]
+[debug] [2025-03-05T16:17:51.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q 200
+[debug] [2025-03-05T16:17:51.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q {"projectId":"amzn-interview-q","projectNumber":"750157807369","displayName":"AMZN Interview Q","name":"projects/amzn-interview-q","resources":{"hostingSite":"amzn-interview-q"},"state":"ACTIVE","etag":"1_2054913f-402c-418a-9aac-0cd8a4f2d276"}
+[info] i  Using project amzn-interview-q (AMZN Interview Q) 
+[info] 
+=== Hosting Setup
+[debug] [2025-03-05T16:17:51.843Z] Checked if tokens are valid: true, expires at: 1741194291309
+[debug] [2025-03-05T16:17:51.843Z] Checked if tokens are valid: true, expires at: 1741194291309
+[debug] [2025-03-05T16:17:51.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q [none]
+[debug] [2025-03-05T16:17:52.096Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q 200
+[debug] [2025-03-05T16:17:52.097Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amzn-interview-q {"projectId":"amzn-interview-q","projectNumber":"750157807369","displayName":"AMZN Interview Q","name":"projects/amzn-interview-q","resources":{"hostingSite":"amzn-interview-q"},"state":"ACTIVE","etag":"1_2054913f-402c-418a-9aac-0cd8a4f2d276"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

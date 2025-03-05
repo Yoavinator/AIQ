@@ -315,11 +315,15 @@ const InterviewRecorder = ({ removePracticeHeader = false }) => {
       
       console.log('Starting transcription request');
       
-      // Use deployed server
-      const response = await fetch('https://amazon-interview-q-gen.onrender.com/api/transcribe', {
+      // Use Firebase Functions
+      const response = await fetch('https://us-central1-amzn-interview-q.cloudfunctions.net/api/transcribe', {
         method: 'POST',
         body: formData,
-        signal: controller.signal
+        signal: controller.signal,
+        mode: 'cors',
+        headers: {
+          'Accept': 'application/json',
+        }
       })
       .then(res => {
         clearTimeout(timeoutId);
@@ -386,8 +390,8 @@ const InterviewRecorder = ({ removePracticeHeader = false }) => {
       console.log("Making request to feedback API with question:", question);
       console.log("Transcription:", transcription.substring(0, 100) + "...");
       
-      // Use deployed server
-      const response = await fetch('https://amazon-interview-q-gen.onrender.com/api/feedback', {
+      // Use Firebase Functions
+      const response = await fetch('https://us-central1-amzn-interview-q.cloudfunctions.net/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "aiq"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "aiq-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
